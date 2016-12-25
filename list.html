@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<style src="css/a1.css"></style>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>{{my_title}}</title>
+</head>
+<body>
+<h1>Table</h1>
+<table>
+{% for i in myList%}
+	<tr>
+		<td>{{i[0]}}</td>
+		{% if i[1]%2 == 0 %}
+		<td class="a" style="background-color: rgb(0,0,{{i[2]}}">{{i[1]}})</td>
+		{%else%}
+		<td class="a" style="background-color: rgb(0,{{i[2]}},0)">{{i[1]}})</td>
+		{% endif %}
+	</tr>
+{% endfor %}
+</table>
+</body>
+</html>

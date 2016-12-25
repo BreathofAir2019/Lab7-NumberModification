@@ -1,0 +1,15 @@
+h1{
+    color: red;
+    margin:10px;
+}
+
+.a {
+    text-align:center;
+    width: 150px
+    height: 40px
+}
+
+table{
+    margin:auto;
+    border: 1px solid black;
+}
